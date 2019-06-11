@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="170dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="修改购买数量"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/ll_change_num"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dialog_reduceNum"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="{fa-minus-square-o}"
+            android:textSize="19sp"
+            tools:ignore="HardcodedText" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/dialog_num"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/dialog_reduceNum"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="1"
+            android:textColor="@color/app_main"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dialog_increaseNum"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/dialog_num"
+            android:gravity="center"
+            android:text="{fa-plus-square-o}"
+            android:textSize="19sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dialog_Nbutton"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dialog_Pbutton"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--uCrop Activity-->
+    <color name="ucrop_color_toolbar">#FF6E40</color>
+    <color name="ucrop_color_statusbar">#CC5833</color>
+    <color name="ucrop_color_toolbar_widget">#ffffff</color>
+    <color name="ucrop_color_widget">#000000</color>
+    <color name="ucrop_color_widget_active">#FF6E40</color>
+    <color name="ucrop_color_widget_background">#fff</color>
+    <color name="ucrop_color_widget_text">#000</color>
+    <color name="ucrop_color_progress_wheel_line">#808080</color>
+    <color name="ucrop_color_crop_background">#000</color>
+
+    <!--Crop View-->
+    <color name="ucrop_color_default_crop_grid">#80ffffff</color>
+    <color name="ucrop_color_default_crop_frame">#ffffff</color>
+    <color name="ucrop_color_default_dimmed">#8c000000</color>
+    <color name="ucrop_color_default_logo">#4f212121</color>
+    <color name="ucrop_color_grey">#999999</color>
+
+    <color name="colorPrimary">#f5b847</color>
+    <color name="colorPrimaryDark">#f5b847</color>
+    <color name="colorAccent">#ec7c42</color>
+
+    <color name="bar_grey">#393a3e</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#7D7DFF</color>
+    <color name="color_fa">#fafafa</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="color_c51">#f94c51</color>
+    <color name="color_green">#43c117</color>
+</resources>

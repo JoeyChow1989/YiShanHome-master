@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:alpha="230"
+    android:background="#aaffffff"
+    android:baselineAligned="true">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/ic_renminbi_pic" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/id_goods_detail_bottom_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="left|bottom"
+            android:paddingBottom="10dp"
+            android:text="289"
+            android:textColor="@color/price_red"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/price_red"
+            android:gravity="left|bottom"
+            android:paddingBottom="10dp"
+            android:text="元"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|bottom"
+            android:paddingLeft="5dp"
+            android:paddingBottom="12dp"
+            android:text="门市价:"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/id_goods_detail_bottom_realprice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="left|bottom"
+            android:paddingLeft="10dp"
+            android:paddingBottom="12dp"
+            android:text="¥389"
+            android:textSize="12sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_bottom_go_pay"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:text="立即抢购"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"></android.support.v7.widget.AppCompatTextView>
+
+</android.support.v7.widget.LinearLayoutCompat>
+

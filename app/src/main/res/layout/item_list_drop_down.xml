@@ -1,0 +1,24 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_list_drop_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="20dp"
+        android:text="全部分类"
+        android:textSize="11sp"
+        android:gravity="left|center"
+        android:paddingRight="25dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/detail_hint"
+        />
+
+</android.support.v7.widget.CardView>

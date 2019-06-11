@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/id_left_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_appcolor" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="提交订单"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/id_order_product_pic"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.7"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/ic_suborder_demopic" />
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/id_order_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="什么什么项目名字"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/id_order_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="2"
+                        android:lines="2"
+                        android:maxLines="3"
+                        android:paddingTop="3dp"
+                        android:text="用针对某些人群提高精神力，摆脱亚健康，的有效工作作用针对某些人群提高精神力，"
+                        android:textSize="11sp" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/id_order_price"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="right|bottom"
+                            android:text="289"
+                            android:textColor="@color/price_red"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left|bottom"
+                            android:text="元"
+                            android:textColor="@color/price_red"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/id_order_realprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="top|center"
+                        android:paddingTop="5dp"
+                        android:text="门市价：389元"
+                        android:textSize="9sp" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:id="@+id/ly_suborder_add_addr"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/id_suborder_add_pic"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="14dp"
+                        android:src="@drawable/ic_add_pic" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/id_suborder_add_txt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="收货地址:"
+                        android:textColor="@color/gray_hint"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/id_suborder_address"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="left|center_vertical"
+                        android:text="添加/选择地址"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="13dp"
+                        android:src="@drawable/ic_right" />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:id="@+id/ly_suborder_add_payway"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/id_suborder_payway_pic1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="14dp"
+                        android:src="@drawable/ic_add_pic" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/id_suborder_payway_pic2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="7dp"
+                        android:src="@drawable/ic_wechat_pay"
+                        android:visibility="gone" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/id_suborder_payway_txt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="left|center_vertical"
+                        android:text="选择支付方式"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="13dp"
+                        android:src="@drawable/ic_right" />
+                </android.support.v7.widget.LinearLayoutCompat>
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="left|center"
+                        android:paddingLeft="20dp"
+                        android:text="选择个数"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="5dp">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/iv_suborder_cut"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_suborder_cut"
+                            android:padding="9dp"
+                            android:src="@drawable/ic_suborder_cut" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_suborder_num"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_suborder_text"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textSize="12sp" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/iv_suborder_add"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_suborder_add"
+                            android:padding="6dp"
+                            android:src="@drawable/ic_suborder_add" />
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:paddingLeft="20dp"
+                        android:text="订单小计"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/id_order_min_price"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right|center"
+                        android:paddingRight="20dp"
+                        android:text=""
+                        android:textColor="@color/app_main"
+                        android:textSize="14sp" />
+                </android.support.v7.widget.LinearLayoutCompat>
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="备注" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_edit_line"
+                    android:gravity="left|start"
+                    android:hint="有什么特殊要求可以备注下哟～"
+                    android:maxLines="5"
+                    android:minLines="1"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded" />
+            </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/id_suborder_to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/app_main"
+                android:gravity="right|center"
+                android:paddingRight="5dp"
+                android:text="确认支付"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/id_order_max_price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/app_main"
+                    android:gravity="right|center"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/app_main"
+                    android:gravity="center|left"
+                    android:paddingTop="5dp"
+                    android:text="元"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </RelativeLayout>
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zzy.mate.picture">
+    <application>
+
+        <provider
+            android:name="com.zzy.mate.picture.PictureFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity
+            android:name=".PictureSelectorActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".PicturePreviewActivity" />
+        <activity
+            android:name=".PictureVideoPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensor" />
+        <activity android:name=".PictureExternalPreviewActivity" />
+        <activity android:name="com.zzy.mate.ucrop.UCropActivity" />
+        <activity android:name="com.zzy.mate.ucrop.PictureMultiCuttingActivity" />
+        <activity android:name=".PicturePlayAudioActivity" />
+    </application>
+</manifest>
+
+

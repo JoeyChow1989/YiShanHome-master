@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/app_main"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/id_left_back_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:src="@drawable/ic_left_back" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/sort"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <!--<android.support.v7.widget.ContentFrameLayout-->
+        <!--android:id="@+id/vertical_list_container"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1" />-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_vertical_menu_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"/>
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:id="@+id/sort_content_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

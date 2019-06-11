@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_gravity="center"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_multiple"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2.5"
+            android:padding="5dp"
+            android:src="@drawable/ic_shop_pic_demo" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_index_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="2"
+                android:gravity="left|center"
+                android:text="维嫣养生旗舰店"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_index_item_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1.4"
+                android:paddingLeft="1dp"
+                android:text="[舟山]招牌中医养生"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.8">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="3dp"
+                    android:src="@drawable/ic_renminbi_pic" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_index_item_price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="left|center"
+                    android:text="289"
+                    android:textColor="@color/price_red"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_index_item_realprice"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="4"
+                    android:gravity="bottom"
+                    android:text="元 起"
+                    android:textSize="8sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1.5">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_index_item_tag1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="#足浴"
+                    android:textSize="8sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_index_item_tag2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="#推拿"
+                    android:textSize="8sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_index_item_distance"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:paddingRight="10dp"
+                android:text="2.5km"
+                android:textSize="8sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_index_item_sold"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="已售300"
+                android:textSize="8sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.CardView>

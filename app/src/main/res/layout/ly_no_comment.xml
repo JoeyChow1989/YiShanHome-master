@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_no_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="18dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="5dp"
+            android:paddingTop="18dp"
+            android:src="@drawable/ic_no_comment_pic"></android.support.v7.widget.AppCompatImageView>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|bottom"
+                android:paddingBottom="2dp"
+                android:paddingLeft="3dp"
+                android:text="近期评价不足，无法估算综合评价"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:paddingLeft="3dp"
+                android:paddingTop="2dp"
+                android:text="亲，记得订单中有评价按钮哟～不要忘了点评哟～"
+                android:textSize="12sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

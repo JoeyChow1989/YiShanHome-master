@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sshy.yjy.ui.banner.mzbanner.MZBannerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/banner"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="130dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    app:canLoop="true"
+    app:indicatorAlign="center"
+    app:indicatorPaddingLeft="10dp"
+    app:middle_page_cover="true"
+    app:open_mz_mode="true" />

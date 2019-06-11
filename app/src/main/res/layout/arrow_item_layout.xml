@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_marginTop="3dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_arrow_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left|center"
+        android:paddingLeft="20dp"
+        android:text="固定电话:" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_arrow_value"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:textColor="#3992ff"
+        android:text="31785888" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/icon_arrow"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/ic_right" />
+
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="gray">#cccccc</color>
+    <color name="app_background">#eeeeee</color>
+    <color name="app_main">#f5b847</color>
+    <color name="price_red">#ff6a00</color>
+
+
+</resources>

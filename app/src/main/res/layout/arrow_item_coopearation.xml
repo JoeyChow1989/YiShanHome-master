@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left|center">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_cooper_item_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_cooper_health_pic" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/iv_cooper_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="left|bottom"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:text="养身商家入驻"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/iv_cooper_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="left|top"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:text="加入颐闪到家，实现销售用户双增长"
+            android:textColor="@color/comment_hint"
+            android:textSize="13sp" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingRight="30dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="38dp"
+        android:paddingBottom="38dp"
+        android:src="@drawable/ic_right"/>
+
+</android.support.v7.widget.LinearLayoutCompat>

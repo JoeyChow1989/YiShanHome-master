@@ -1,0 +1,9 @@
+<view class='container'>
+  <image class='avatar' src='/images/ic_big_icon.png' />
+  <view class="journey-container" bindtap="onTap">
+    <text class="journey">开启小程序之旅</text>
+  </view>
+  <text class='text1'>一闪就到家</text>
+  <text class='text2'>说到就到的服务</text>
+
+</view>

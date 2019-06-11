@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_shop_detail_main_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/al_shop_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/cl_shop_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:statusBarScrim="@android:color/transparent"
+                app:titleEnabled="false">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp">
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/ic_qq_jietu">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/id_shop_detail_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="115dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="维嫣大健康养生馆"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/id_rl_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/id_tv_shop_detail_pingfen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="115dp"
+                                android:text="评分4.6"
+                                android:textColor="@color/bar_grey"
+                                android:textSize="12sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/id_tv_shop_detail_yueshou"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/id_tv_shop_detail_pingfen"
+                                android:text="月售20"
+                                android:textColor="@color/bar_grey"
+                                android:textSize="12sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/id_tv_shop_detail_zhundian"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/id_tv_shop_detail_yueshou"
+                                android:text="准点率100%"
+                                android:textColor="@color/bar_grey"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/iv_go_door"
+                                android:layout_width="45dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="115dp" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="45dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/iv_go_door" />
+
+                        </RelativeLayout>
+
+                        <android.support.v7.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_shop_detail_addrs"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="4"
+                                android:maxLines="2"
+                                android:text="长青路1200号僧虹广场颐景园内长青路1200号僧虹广场颐景园内长青路1200号僧虹广场颐景园内长青路1200号僧虹广场颐景园内"
+                                android:textColor="@color/bar_grey"
+                                android:textSize="12sp" />
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right|top"
+                                android:layout_weight="1">
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:layout_width="10dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="top"
+                                    android:paddingLeft="2dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="6dp"
+                                    android:src="@drawable/ic_loc_pic" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/id_shop_detail_distance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center|top"
+                                    android:paddingTop="2dp"
+                                    android:text="7.0km"
+                                    android:textColor="@color/bar_grey"
+                                    android:textSize="10sp" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@color/black" />
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/iv_shop_detail_phone"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:padding="5dp"
+                                    android:paddingBottom="1dp"
+                                    android:src="@drawable/ic_phone" />
+                            </android.support.v7.widget.LinearLayoutCompat>
+                        </android.support.v7.widget.LinearLayoutCompat>
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left|center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/id_shop_detail_pic"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/ic_shop_pic_demo" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/id_shop_detail_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingTop="20dp"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/id_shop_detail_back"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_left_back" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/id_shop_detail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        android:textColor="@color/transparent"
+                        android:textSize="16sp" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/id_shop_detail_share"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="20dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_share" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/id_collect_shop_detail"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:padding="8dp" />
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <com.flyco.tablayout.CommonTabLayout
+                android:id="@+id/id_shop_detail_tab"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:tl_iconVisible="false"
+                app:tl_indicator_color="@color/app_main"
+                app:tl_indicator_width="10dp"
+                app:tl_textBold="SELECT"
+                app:tl_textSelectColor="@color/app_main"
+                app:tl_textUnselectColor="@color/gray_hint"
+                app:tl_textsize="14sp" />
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_change"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

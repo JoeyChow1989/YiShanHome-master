@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_shop_detail_project_top_text"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:background="@color/white"
+    android:gravity="left|center"
+    android:paddingLeft="10dp"
+    android:text="商家推荐"
+    android:textColor="@color/black"
+    android:textSize="11sp">
+
+</android.support.v7.widget.AppCompatTextView>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/white">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/id_addaddress_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_appcolor" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="添加地址"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/id_addaddress_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/app_main"
+            android:textSize="14sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/app_background"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:paddingLeft="20dp"
+                android:text="姓名:"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/id_addaddress_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/white"
+                android:gravity="left|center"
+                android:hint="请输入姓名"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:paddingLeft="20dp"
+                android:text="手机号:"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/id_addaddress_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/white"
+                android:gravity="left|center"
+                android:hint="请输入手机号"
+                android:inputType="textPhonetic"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:paddingLeft="20dp"
+                android:text="地址:"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/id_addaddress_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/white"
+                android:gravity="left|center"
+                android:hint="请输入您所在的小区/大厦/街道名/门牌号"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:paddingLeft="20dp"
+                android:text="设为默认地址:"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/id_switch_address"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

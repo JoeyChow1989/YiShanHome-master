@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/app_main">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/id_sort_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:src="@drawable/ic_left_back" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/id_sort_shoplist_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_rcy_sort_shoplist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" />
+
+</android.support.v7.widget.LinearLayoutCompat>

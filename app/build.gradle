@@ -1,0 +1,147 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+apply plugin: 'org.greenrobot.greendao'
+
+def buildTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.sshy.yjy.strore"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 101
+        versionName "1.0.1"
+        flavorDimensions "versionCode"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "35040c43d4b83d84c2abcb95",
+                JPUSH_CHANNEL: "developer-default",
+        ]
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    //渠道Flavors，配置不同风格的app,友盟渠道统计时用到
+    productFlavors {
+        wandoujia {}
+        "offical" {}
+        "360" {}
+        yingyongbao {}
+        baidu {}
+        "91" {}
+    }
+
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            release {
+                // 不显示Log
+                buildConfigField "boolean", "LOG_DEBUG", "false"
+                //混淆
+                minifyEnabled true
+                //Zipalign优化
+                zipAlignEnabled true
+                //移除无用的resource文件
+                shrinkResources true
+                //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明，后一个文件是自己的定义混淆文件
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+                android.applicationVariants.all { variant ->
+                    variant.outputs.all {
+                        outputFileName = "颐闪到家_v_${variant.versionCode}-${variant.versionName}-" +
+                                "${variant.productFlavors[0].name}_${buildTime()}.apk"
+                    }
+                }
+            }
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+MobSDK {
+    appKey "2590c60e56806"
+    appSecret "6e091f97fc2560f4efb25d8bf0c77d4b"
+
+    ShareSDK {
+        gui true //调用ShareSDK默认的界面
+        devInfo {
+            Wechat {
+                appId "wxf10066c179e38b8a"
+                appSecret "69b8ad3e79905e914f481fe03251f38d"
+            }
+
+            WechatMoments{
+                appId "wxf10066c179e38b8a"
+                appSecret "69b8ad3e79905e914f481fe03251f38d"//登录需要配置appsecret 分享不需要配置
+                bypassApproval false
+            }
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':mate-ui')
+    api project(':mate-picture')
+
+    api 'me.jessyan:autosize:1.1.2'
+    api 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    api files("libs/BaiduLBS_Android.jar")
+    //强大的下拉刷新控件
+    api 'in.srain.cube:ultra-ptr:1.0.11'
+    //viewAnimator
+    api 'com.github.florent37:viewanimator:1.0.5'
+
+    implementation 'com.android.support:multidex:1.0.3'
+    api 'cn.jiguang.sdk:jpush:3.0.1'
+    api 'cn.jiguang.sdk:jcore:1.1.0'
+    api 'com.android.support:support-core-utils:28.0.0'
+
+    api files('libs/pgyer_sdk_3.0.4.jar')
+
+    debugImplementation 'com.github.BolexLiu.AutoEx:AutoEx-Lib:v1.0.7' //debug包
+    releaseImplementation 'com.github.BolexLiu.AutoEx:AutoEx-Lib-No-Op:v1.0.7' //release包
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
+    // Optional, if you use support library fragments:
+    debugImplementation 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.3'
+}

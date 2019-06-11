@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">>
+    <string name="app_name">颐闪到家</string>
+    <string name="search">搜索</string>
+    <string name="sort">所有项目</string>
+    <string name="discover">发现</string>
+    <string name="shoppingcat">购物车</string>
+    <string name="actionBar_edit">编辑</string>
+    <string name="all">全选</string>
+    <string name="order_total">合计 :</string>
+
+    <string name="scroll_behavior">@string/appbar_scrolling_view_behavior</string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/single_checkBox"
+            android:visibility="visible"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:minWidth="32dp"
+            android:minHeight="64dp"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/checkbox_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/goods_image"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/goods_data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="2dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="五月天【沉梦昂志】2050年演唱会 武汉站"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/goods_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="5dp"
+                android:text="门票:内场 类型:憨人"
+                android:textSize="14dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="15dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:lines="1"
+                    android:text="￥100000.00"
+                    android:textSize="16.5sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/goods_prime_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/goods_price"
+                    android:text=""
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/goods_buyNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:text="x1"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/edit_goods_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/reduce_goodsNum"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="—"
+                        android:textSize="20sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/goods_Num"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="20sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/increase_goods_Num"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/goodsSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="门票:内场 类型:憨人" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/del_goods"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@android:color/white"
+                android:textSize="16.5sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:background="@color/white" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

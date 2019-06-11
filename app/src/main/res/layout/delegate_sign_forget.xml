@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_sign_up_bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/id_sign_forget_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_appcolor" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="忘记密码"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="15dp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.9"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <!--手机号码 -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_sign_up_forget_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="手机号"
+                    android:inputType="phone"
+                    android:textColor="@color/comment_hint"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--验证码-->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/edit_sign_up_forget_yanzheng"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="请输入验证码"
+                        android:textColor="@color/comment_hint"
+                        android:textSize="14sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_sign_up_forget_yanzheng"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="10dp"
+                    android:text="获取验证码"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <!--密码 -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_sign_up_forget_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="重新设置新密码"
+                    android:inputType="textPassword"
+                    android:textColor="@color/comment_hint"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--确认密码 -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_sign_up_forget_pwd_agin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="再次确认新密码"
+                    android:inputType="textPassword"
+                    android:textColor="@color/comment_hint"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_sign_up_forget"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_circle"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.16"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1.1"
+            android:background="@drawable/ic_forget_pwd_bg" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

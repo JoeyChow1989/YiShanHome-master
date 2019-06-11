@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/YiShanHome-master.iml" filepath="$PROJECT_DIR$/YiShanHome-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mate-core/mate-core.iml" filepath="$PROJECT_DIR$/mate-core/mate-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mate-picture/mate-picture.iml" filepath="$PROJECT_DIR$/mate-picture/mate-picture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mate-ucrop/mate-ucrop.iml" filepath="$PROJECT_DIR$/mate-ucrop/mate-ucrop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mate-ui/mate-ui.iml" filepath="$PROJECT_DIR$/mate-ui/mate-ui.iml" />
+    </modules>
+  </component>
+</project>
